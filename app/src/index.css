@@ -1,3 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+html {
+  background: #2d363b;
+}
+
+textarea {
+  background: rgb(68, 79, 87);
+  color: white;
+  border-color: rgb(51, 73, 94);
+}
+
+::placeholder {
+  color: rgb(189, 189, 189);
+}
+
 .container {
   padding: 1em, 10em, 1em, 10em;
 }
@@ -6,27 +31,41 @@ textarea {
   resize: none;
 }
 
+textarea:focus {
+  outline: none !important;
+  border: 1px solid rgb(104, 104, 104);
+}
+
 .input {
+  padding: 1em;
   font-size: 12pt;
   float: left;
-  padding: 0;
   margin-left: 2em;
   margin-top: 2em;
 }
 
 .output {
+  padding: 1em;
   margin-right: 2em;
   margin-top: 2em;
-  background: gray;
+  background: rgb(68, 79, 87);
   float: right;
-  border: solid blue 1px;
+  color: white;
+  border: solid rgb(51, 73, 94) 1px;
 }
 
 .size {
   width: 40rem;
-  height: 38rem;
+  height: 41rem;
 }
 
-.highlight {
-  background: rgb(255, 255, 165);
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #C7D1D9;
+  color: black;
+  text-align: center;
 }
+

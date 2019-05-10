@@ -36,9 +36,18 @@ class Editor extends React.Component {
   render() {
     return (
       <div>
-        <textarea className='input size' value={this.state.value} onChange={this.handleChange}/>
+        <textarea className='input size' 
+        value={this.state.value} 
+        onChange={this.handleChange}
+        placeholder='Input text here'/>
         <Output text={this.state.text} />
+        <div className='footer'>
+          <p>
+            Live Markdown Editor
+          </p>
+        </div>
       </div>
+
     )
   }
 }
